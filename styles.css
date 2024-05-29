@@ -1,30 +1,24 @@
-.e389_1360 {
-  overflow: hidden;
-}
-.e389_1360 {
-  background-color: rgba(255, 255, 255, 1);
-  width: 1512px;
-  height: 982px;
-  position: absolute;
-}
-.e389_1361 {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  left: 681px;
-  top: 416px;
-}
-.i389_1361_67_970 {
-  overflow: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.ei389_1361_67_971 {
-  width: 200px;
-  height: 200px;
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+}
+
+.logo {
+  position: relative;
+  height: 100vh;
+}
+
+.logo img {
   position: absolute;
-  left: -3px;
-  top: -19px;
-  background-image: url(images/pinterest-logo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
 }
