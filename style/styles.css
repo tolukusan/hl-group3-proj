@@ -1,0 +1,134 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid #e1e1e1;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 32px;
+}
+
+input {
+  height: 36px;
+  border-radius: 18px;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 0 15px;
+  flex-grow: 1;
+  margin: 0 20px;
+  font-size: 16px;
+}
+
+.icons {
+  position: fixed;
+  top: 0;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 15px;
+}
+
+.icons img {
+  width: 25px;
+}
+
+.container {
+  margin-top: 80px; /* Adjust this value based on the header height */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+.tile {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tile img {
+  width: 100%;
+  height: auto;
+}
+
+.tile .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 50%;
+  display: none;
+}
+
+.tile:hover .overlay {
+  display: flex;
+}
+
+.tile .overlay img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.tile .overlay p {
+  margin: 0;
+  padding: 6px;
+  background-color: #bd081d;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.tile-bottom {
+  padding: 10px;
+}
+
+.tile-bottom img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.tile-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.bottom-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+}
+
+.float-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #e60023;
+  color: white;
+  border-radius: 50%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
