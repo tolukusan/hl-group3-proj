@@ -60,7 +60,7 @@ body {
 .left-logo p {
   color: #111111;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .black-button {
@@ -79,16 +79,21 @@ body {
 .left-logo span {
   display: inline-flex;
   align-items: center;
-  gap: 15px;
-  padding-left: 10px;
+  gap: 12px;
+  font-size: 10px;
+}
+
+.left-span p {
+  font-size: 14px;
 }
 
 .left-logo span img {
-  width: 15px;
+  width: 13px;
 }
 
 .center-nav {
   padding-left: 15px;
+  position: relative;
 }
 
 .center-nav input {
@@ -99,14 +104,27 @@ body {
   border: none;
   color: #333333;
   font-size: 16px;
-  width: 600px;
+  width: 650px;
+}
+
+.span-search {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  transform: translateY(-50%);
+  color: #888;
 }
 
 .center-nav input::placeholder {
   color: #333333;
+  font-size: 15px;
+  font-weight: normal;
+  position: absolute;
+  left: 50px;
+  top: 10px
 }
 
-.center-nav input:focus {
+.center-nav input:active {
   outline: none;
 }
 
